@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+
+body header {
+  height: 100vh;
+  border: 1px solid red;
+}
+
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #4a8fe7;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+body header nav .logo {
+  height: 100px;
+}
+
+body header nav .logo .img-logo {
+  padding-top: 5px;
+  height: 70px;
+  width: 70px;
+}
+
+body header nav .links ul > li {
+  list-style: none;
+  display: inline-block;
+}
+
+body header nav .links ul > li:nth-child(2):before, body header nav .links ul > li:nth-last-child(2):after {
+  content: " | ";
+}
+
+body header nav .links ul > li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+body header .jumbotron {
+  text-align: center;
+  height: 70vh;
+  padding: 0;
+  border: 1px solid green;
+}
+
+body header .jumbotron div {
+  display: relative;
+  height: 100%;
+  border: 1px solid #000;
+}
+
+body header .jumbotron div img {
+  width: 80%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -10;
+}
+
+body header .jumbotron div h2 {
+  display: absolute;
+  top: 55px;
+}
+
+body .projects .project-img img {
+  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */
