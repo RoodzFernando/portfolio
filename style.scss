@@ -1,101 +1,105 @@
-$header-color: #4a8fe7;
-$text-color: #001011;
-$projects-color: #136f63;
-$footer-color: #59d2fe;
-$white: #fff;
-body {
-    margin: 0;
-    header {
-        // position: relative;
-        height: 100vh;
-        // border: 1px solid maroon;
-        // margin: 0;
-        nav {
-            height: 150px;
-            // clip-path: polygon(0 0, 100% 0, 100% 23%, 0 35%);
-            clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-            background-color: $header-color;
-            // border: 1px solid #000;
-        }
-        // border: 1px solid red;
-        // position: relative;
-        .container {
-            // height: 100%;
-            position: relative;
-            bottom: 60px;
-            .jumbotron {
-                // border: 1px solid #000;
-                // position: absolute;
-                // bottom: 10px;
-                height: 90vh;
-                text-align: center;
-                background-image: url('./images/jumbo-background.jpg');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-                background-color: $white;
+    $header-color: #4a8fe7;
+    $text-color: #001011;
+    $projects-color: #136f63;
+    $footer-color: #59d2fe;
+    $white: #fff;
+    body {
+        margin: 0;
+        header {
+            height: 100vh;
+            nav {
+                height: 150px;
+                clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+                background-color: $header-color;
             }
-        }
-    }
-    .projects-bg {
-        // clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
-        clip-path: polygon(0 4%, 100% 2%, 100% 100%, 0% 100%);
-        background-color: $projects-color;
-        // border: 1px solid red;
-        position: relative;
-        bottom: 60px;
-        z-index: -10;
-        padding-top: 100px;
-        padding-bottom: 15px;
-    }
-    .projects {
-        background-color: #fff;
-        box-sizing: border-box;
-        border: 1px solid $white;
-        border-radius: 15px;
-        margin: 25px 0 25px 0;
-        .project-section {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            h1,
-            .project-links,
-            p {
-                text-align: center;
-            }
-            .btn-info:nth-child(2) {
-                // border: 1px solid red;
-                svg {
-                    fill: $white;
-                    font-size: 2.1rem;
-                    font-weight: 400;
-                    width: 140px;
-                    // text-align: center;
+            .container {
+                position: relative;
+                bottom: 60px;
+                z-index: 20;
+                .jumbotron {
+                    height: 90vh;
+                    text-align: center;
+                    background-image: url('./images/jumbo-background.jpg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    background-color: $white;
                 }
             }
         }
-        .project-img:nth-child(odd) {
-            // border: 1px solid red;
-            padding: 0;
-            img {
-                border-radius: 15px 0 0 15px;
-                width: 100%;
-                height: auto;
-                object-fit: cover;
+        .projects-bg {
+            clip-path: polygon(0 4%, 100% 2%, 100% 100%, 0% 100%);
+            background-color: $projects-color;
+            position: relative;
+            bottom: 60px;
+            padding-top: 100px;
+            padding-bottom: 15px;
+        }
+        .projects {
+            background-color: #fff;
+            box-sizing: border-box;
+            border: 1px solid $white;
+            border-radius: 15px;
+            margin: 25px 0 25px 0;
+            .project-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                h1,
+                .project-links,
+                p {
+                    text-align: center;
+                }
+                .btn-info:nth-child(2) {
+                    svg {
+                        fill: $white;
+                        font-size: 2.1rem;
+                        font-weight: 400;
+                        width: 140px;
+                    }
+                }
+            }
+            .project-img:nth-child(odd) {
+                padding: 0;
+                img {
+                    border-radius: 15px 0 0 15px;
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+            .project-img:nth-child(even) {
+                padding: 0;
+                img {
+                    border-radius: 0 15px 15px 0;
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
             }
         }
-        .project-img:nth-child(even) {
-            // border: 1px solid red;
-            padding: 0;
-            img {
-                border-radius: 0 15px 15px 0;
-                width: 100%;
-                height: auto;
-                object-fit: cover;
+        .my_bio {
+            margin-bottom: 45px;
+        }
+        footer {
+            background-color: $footer-color;
+            padding-top: 25px;
+            .footer-links {
+                margin-top: 25px;
+                margin-bottom: 15px;
+                div {
+                    .btn {
+                        border-radius: 50%;
+                    }
+                    .btn:nth-child(2) {
+                        margin-left: 15px;
+                        margin-right: 15px;
+                    }
+                    span {
+                        display: block;
+                        margin-top: 10px;
+                    }
+                }
             }
         }
     }
-    footer {
-        background-color: $footer-color;
-    }
-}
