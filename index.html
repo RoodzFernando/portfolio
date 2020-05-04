@@ -11,26 +11,94 @@
 </head>
 
 <body>
-    <div class="container-fluid" id="nav-bar">
+    <div class="container-fluid" id="nav-bar" style="padding: 0;">
         <header>
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">Roodz Fernando</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Project <span class="sr-only">(current)</span></a>
+            <nav>
+
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="318" height="318" viewBox="0 0 318 318">
+                        <defs>
+                            <filter id="Ellipse_6" x="0" y="0" width="318" height="318" filterUnits="userSpaceOnUse">
+                                <feOffset dy="3" input="SourceAlpha" />
+                                <feGaussianBlur stdDeviation="3" result="blur" />
+                                <feFlood flood-opacity="0" />
+                                <feComposite operator="in" in2="blur" />
+                                <feComposite in="SourceGraphic" />
+                            </filter>
+                        </defs>
+                        <g id="Group_2" data-name="Group 2" transform="translate(-541 -369)">
+                            <g transform="matrix(1, 0, 0, 1, 541, 369)" filter="url(#Ellipse_6)">
+                                <g id="Ellipse_6-2" data-name="Ellipse 6" transform="translate(9 6)" fill="#5252af" stroke="#fff"
+                                    stroke-width="5">
+                                    <circle cx="150" cy="150" r="150" stroke="none" />
+                                    <circle cx="150" cy="150" r="147.5" fill="none" />
+                                </g>
+                            </g>
+                            <line id="Line_16" data-name="Line 16" y2="200" transform="translate(650 425)" fill="none" stroke="#fff"
+                                stroke-width="5" />
+                            <line id="Line_12" data-name="Line 12" y2="200" transform="translate(750 425)" fill="none" stroke="#fff"
+                                stroke-width="5" />
+                            <line id="Line_17" data-name="Line 17" x2="25" transform="translate(625 525)" fill="none" stroke="#fff"
+                                stroke-width="5" />
+                            <line id="Line_13" data-name="Line 13" x2="25" transform="translate(750 525)" fill="none" stroke="#fff"
+                                stroke-width="5" />
+                            <line id="Line_18" data-name="Line 18" x2="12" transform="translate(638 425)" fill="none" stroke="#fff"
+                                stroke-width="5" />
+                            <line id="Line_14" data-name="Line 14" x2="25" transform="translate(738 625)" fill="none" stroke="#fff"
+                                stroke-width="5" />
+                            <line id="Line_19" data-name="Line 19" x2="61" transform="translate(591 625)" fill="none" stroke="#fff"
+                                stroke-width="5" />
+                            <line id="Line_15" data-name="Line 15" x2="61" transform="translate(748 425)" fill="none" stroke="#fff"
+                                stroke-width="5" />
+                            <path id="Path_7" data-name="Path 7" d="M650,500" transform="translate(0 25)" fill="none" stroke="#fff"
+                                stroke-width="1" />
+                            <path id="Path_5" data-name="Path 5" d="M650,500s89.543,3.422,100,100" transform="translate(0 25)" fill="none"
+                                stroke="#fff" stroke-width="5" />
+                            <path id="Path_6" data-name="Path 6" d="M650,500s218.664-90.333,0-100" transform="translate(0 25)" fill="none"
+                                stroke="#fff" stroke-width="5" />
+                            <g id="Group_1" data-name="Group 1">
+                                <line id="Line_20" data-name="Line 20" y2="200" transform="translate(650 425)" fill="none" stroke="#fff"
+                                    stroke-width="6" />
+                            </g>
+                            <line id="Line_21" data-name="Line 21" y2="200" transform="translate(750 425)" fill="none" stroke="#fff"
+                                stroke-width="6" />
+                            <line id="Line_22" data-name="Line 22" x2="25" transform="translate(625 525)" fill="none" stroke="#fff"
+                                stroke-width="6" />
+                            <line id="Line_23" data-name="Line 23" x2="25" transform="translate(750 525)" fill="none" stroke="#fff"
+                                stroke-width="6" />
+                            <line id="Line_24" data-name="Line 24" x2="12" transform="translate(638 425)" fill="none" stroke="#fff"
+                                stroke-width="5" />
+                            <line id="Line_25" data-name="Line 25" x2="25" transform="translate(738 625)" fill="none" stroke="#fff"
+                                stroke-width="6" />
+                            <line id="Line_26" data-name="Line 26" x2="61" transform="translate(591 625)" fill="none" stroke="#fff"
+                                stroke-width="6" />
+                            <line id="Line_27" data-name="Line 27" x2="61" transform="translate(748 425)" fill="none" stroke="#fff"
+                                stroke-width="6" />
+                            <path id="Path_8" data-name="Path 8" d="M650,500" transform="translate(0 25)" fill="none" stroke="#fff"
+                                stroke-width="1" />
+                            <path id="Path_9" data-name="Path 9" d="M650,500s89.543,3.422,100,100" transform="translate(0 25)" fill="none"
+                                stroke="#fff" stroke-width="6" />
+                            <path id="Path_10" data-name="Path 10"
+                                d="M650,500s113.354-46.828,95.079-76.886C738.166,411.738,711.227,402.707,650,400"
+                                transform="translate(0 25)" fill="none" stroke="#fff" stroke-width="6" />
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="#projects">Project</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                        <li>
+                            <a href="#about">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                        <li>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
+
             </nav>
             <div class="container">
                 <div class="jumbotron">
@@ -40,7 +108,7 @@
             </div>
         </header>
     </div>
-    <div class="container-fluid projects-bg">
+    <div class="container-fluid projects-bg" id="projects">
         <div class="container ">
             <div class="row projects">
                 <div class="col-lg-4 project-img">
@@ -114,7 +182,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="about">
         <div class="row my_bio">
             <div class="offset-lg-3  col-lg-6">
                 <h2>About me</h2>
@@ -125,7 +193,7 @@
     </div>
 
     <footer>
-        <div class="container">
+        <div class="container" id="contact">
             <div class="row">
                 <div class="offset-lg-3  col-lg-6">
                     <h2>Feel free to contact me</h2>

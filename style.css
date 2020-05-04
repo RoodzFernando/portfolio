@@ -7,10 +7,50 @@ body header {
 }
 
 body header nav {
+  padding-top: 15px;
   height: 150px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   background-color: #4a8fe7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body header nav .test {
+  border: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header nav .logo svg {
+  height: 65px;
+  width: 65px;
+}
+
+body header nav .nav-links {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 45px;
+}
+
+body header nav .nav-links ul li {
+  display: inline-block;
+}
+
+body header nav .nav-links ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+body header nav .nav-links a[href="#about"] {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 body header .container {

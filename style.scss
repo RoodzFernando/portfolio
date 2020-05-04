@@ -8,9 +8,38 @@
         header {
             height: 100vh;
             nav {
+                padding-top: 15px;
                 height: 150px;
                 clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
                 background-color: $header-color;
+                display: flex;
+                justify-content: space-around;
+                .test {
+                    border: 1px solid #000;
+                    display: flex;
+                }
+                .logo {
+                    svg {
+                        height: 65px;
+                        width: 65px;
+                    }
+                }
+                .nav-links {
+                    align-self: center;
+                    margin-bottom: 45px;
+                    ul li {
+                        display: inline-block;
+                        a {
+                            color: $white;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                        }
+                    }
+                    a[href="#about"] {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+                }
             }
             .container {
                 position: relative;
