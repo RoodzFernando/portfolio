@@ -111,16 +111,29 @@ body .projects .project-section {
 }
 
 body .projects .project-section h1,
-body .projects .project-section .project-links,
-body .projects .project-section p {
+body .projects .project-section .project-links {
   text-align: center;
+  margin-bottom: 15px;
 }
 
-body .projects .project-section .btn-info:nth-child(2) svg {
-  fill: #fff;
-  font-size: 2.1rem;
-  font-weight: 400;
-  width: 140px;
+body .projects .project-section p {
+  text-align: justify;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+body .projects .project-section .material-used {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+body .projects .project-section .material-used .btn-outline-info {
+  cursor: default;
+}
+
+body .projects .project-section .material-used .btn-outline-info:hover {
+  background-color: transparent;
+  color: #17a2b8;
 }
 
 body .projects .project-img:nth-child(odd) {
@@ -130,7 +143,7 @@ body .projects .project-img:nth-child(odd) {
 body .projects .project-img:nth-child(odd) img {
   border-radius: 15px 0 0 15px;
   width: 100%;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -142,7 +155,7 @@ body .projects .project-img:nth-child(even) {
 body .projects .project-img:nth-child(even) img {
   border-radius: 0 15px 15px 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
