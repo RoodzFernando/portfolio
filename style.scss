@@ -22,6 +22,10 @@
                     svg {
                         height: 65px;
                         width: 65px;
+                        [id^="Line"],
+                        [id^="Path"] {
+                            stroke: #4a8fe7;
+                        }
                     }
                 }
                 .nav-links {
@@ -141,6 +145,24 @@
                         display: block;
                         margin-top: 10px;
                     }
+                }
+            }
+        }
+        @media (max-width: 576px) {
+            .projects {
+                .project-img {
+                    img {
+                        border-bottom-left-radius: 0px !important;
+                        border-bottom-right-radius: 0px !important;
+                        border-top-left-radius: 15px !important;
+                        border-top-right-radius: 15px !important;
+                    }
+                }
+            }
+            .projects:nth-child(2) {
+                display: flex;
+                .project-img {
+                    order: -1;
                 }
             }
         }

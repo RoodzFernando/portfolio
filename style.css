@@ -31,6 +31,11 @@ body header nav .logo svg {
   width: 65px;
 }
 
+body header nav .logo svg [id^="Line"],
+body header nav .logo svg [id^="Path"] {
+  stroke: #4a8fe7;
+}
+
 body header nav .nav-links {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -186,5 +191,24 @@ body footer .footer-links div .btn:nth-child(2) {
 body footer .footer-links div span {
   display: block;
   margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+  body .projects .project-img img {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+  }
+  body .projects:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .projects:nth-child(2) .project-img {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
